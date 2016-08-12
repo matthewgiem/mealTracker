@@ -1,9 +1,13 @@
-import { Component } from 'angular2/core';
+import { Component, EventEmitter } from 'angular2/core';
+import { Meal } from './meal.model';
+import { NewMealComponent } from './new-meal.component';
 
 @Component({
-  selector: 'my-app',
+  selector: 'meal-app',
+  directives: [NewMealComponent],
   template: `
-    <h1>Skeleton Angular2 App!</h1>
+    <h1>Meal Tracker App</h1>
+    <new-meal></new-meal>
   `
 })
 export class AppComponent {
