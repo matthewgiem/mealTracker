@@ -9,7 +9,7 @@ import { MealListComponent } from './meal-list.component';
   template: `
     <div class="container">
       <h1>Meal Tracker App</h1>
-      <new-meal></new-meal>
+      <new-meal (onSubmitNewMeal)="addMealToList($event)"></new-meal>
       <hr>
       <meal-list [mealList]="meals"></meal-list>
     </div>
@@ -22,5 +22,8 @@ export class AppComponent {
       new Meal("pizza", "aweful", 1025),
       new Meal("PBJ", "awesome", 250)
     ];
+  }
+  addMealToList(newMeal: Meal): void {
+    this.meals.push(newMeal);
   }
 }
