@@ -1,8 +1,8 @@
-# To Do app
+# Meal Tracker App
 
-#### Current as of August 10, 2016
+#### Current as of August 12, 2016
 
-#### By Lauren Posey and Matthew Giem
+#### By Matthew Giem
 
 ## Description
 
@@ -50,4 +50,4 @@ Come by during class if you have questions.
 
 Licensed under the MIT License
 
-Copyright (c) 2016 **Epicodus Pair Projects**
+Copyright (c) 2016 **Epicodus Projects**
