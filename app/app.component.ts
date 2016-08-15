@@ -11,7 +11,7 @@ import { MealListComponent } from './meal-list.component';
       <h1>Meal Tracker App</h1>
       <new-meal (onSubmitNewMeal)="addMealToList($event)"></new-meal>
       <hr>
-      <meal-list [mealList]="meals"></meal-list>
+      <meal-list [mealList]="meals" (onMealSelect)="mealWasSelected($event)"></meal-list>
     </div>
   `
 })
@@ -22,6 +22,8 @@ export class AppComponent {
       new Meal("pizza", "aweful", 1025),
       new Meal("PBJ", "awesome", 250)
     ];
+  }
+  mealWasSelected(clickedMeal: Meal): void {
   }
   addMealToList(newMeal: Meal): void {
     this.meals.push(newMeal);

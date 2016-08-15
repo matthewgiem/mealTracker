@@ -5,8 +5,5 @@
   <option value="none" selected="selected">show all</option>
 </select>
 <br>
-<meal-display *ngFor="#currentMeal of mealList | sort:selectedSort" [meal]="currentMeal"></meal-display>
-
-
-
-<!-- (click)="mealClicked(currentClick)" [class.selected]="currentMeal === selectedMeal" [meal]="currentMeal" -->
+<meal-display *ngFor="#currentMeal of mealList | sort:selectedSort" (click)="mealClicked(currentMeal)" [class.selected]="currentMeal === selectedMeal" [meal]="currentMeal"></meal-display>
+<edit-meal-details *ngIf="selectedMeal" [meal]="selectedMeal"></edit-meal-details>

@@ -16,7 +16,7 @@ import { Meal } from './meal.model';
 })
 export class NewMealComponent{
   public onSubmitNewMeal: EventEmitter<Meal>;
-  constructor() {
+  constructor(){
     this.onSubmitNewMeal = new EventEmitter();
   }
   addMeal(newFood: HTMLInputElement, newDetails: HTMLInputElement, newCalories: HTMLInputElement) {
