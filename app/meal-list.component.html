@@ -5,7 +5,7 @@
   <option value="none" selected="selected">show all</option>
 </select>
 <br>
-<meal-display *ngFor="#currentMeal of mealList | sort:selectedSort"></meal-display>
+<meal-display *ngFor="#currentMeal of mealList | sort:selectedSort" [meal]="currentMeal"></meal-display>
 
 
 

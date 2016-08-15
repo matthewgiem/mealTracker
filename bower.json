@@ -3,7 +3,7 @@
   "description": "",
   "main": "",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/matthewgiem/mealTracker",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -13,5 +13,8 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7"
-  }
+  },
+  "authors": [
+    "Matthew Giem <matthew.giem@gmail.com>"
+  ]
 }
